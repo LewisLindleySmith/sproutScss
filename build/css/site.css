@@ -9943,7 +9943,7 @@ a {
 .navbar-container {
   justify-content: center;
   padding: 0 0 0 100px;
-  width: 400px;
+  width: 500px;
 }
 .navbar-container li {
   padding: 0 15px;
@@ -10046,4 +10046,19 @@ li ul:hover {
 .navbar-container ul li:hover a:hover::after {
   width: 100%;
   visibility: visible;
+}
+
+.btn-outline-success {
+  color: #f4f4f4;
+}
+
+.banner-text {
+  text-align: center;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.5;
+  width: 800px;
+  color: #ffffff;
 }
