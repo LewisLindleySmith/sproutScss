@@ -10062,3 +10062,7 @@ li ul:hover {
   width: 800px;
   color: #ffffff;
 }
+
+.bg-color {
+  background-color: #f6f6f6;
+}
