@@ -9924,6 +9924,10 @@ a {
   text-decoration: none;
 }
 
+ul {
+  padding: 0;
+}
+
 .nav-section {
   height: 100px;
   align-items: center;
@@ -9957,7 +9961,6 @@ li {
   font-weight: 700;
   text-transform: uppercase;
   list-style-type: none;
-  display: inline-block;
   text-align: left;
 }
 
@@ -10065,4 +10068,8 @@ li ul:hover {
 
 .bg-color {
   background-color: #f6f6f6;
+}
+
+.container {
+  padding: 120px 15px;
 }
