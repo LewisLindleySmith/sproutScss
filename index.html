@@ -27,7 +27,7 @@
     <!-- ***** NAV SECTION ***** -->
 
     <header class="nav-container">
-      <div class="nav-section" id="stickyNavs">
+      <div class="nav-section" id="stickyNav">
         <div class="nav-logo">
           <img src="images/logo-footer.png" alt="company logo" />
         </div>
@@ -167,12 +167,12 @@
     <div class="container">
       <div class="row">
         <div class="col col-md-6 col-sm-12 order-last">
-          <div class="container-text">
+          <div class="container-text right-align">
             <ul class="stacked-ul">
-              <li class="stacked-list" id="phone-icon">
+              <li class="stacked-list" id="phoneIcon">
                 <i class="fas fa-mobile-alt fa-lg"></i>
               </li>
-              <li class="stacked-list"><span>SMS</span></li>
+              <li class="stacked-list right-align"><span>SMS</span></li>
             </ul>
             <h2>Send personalised text messages</h2>
             <p>
@@ -228,6 +228,60 @@
       </div>
     </div>
 
+    <!-- ***** footer container *****  -->
+
+    <footer class="footer-container">
+      <div class="footer-logo">
+        <img src="images/logo-footer.png" alt="company logo" />
+      </div>
+      <div class="footer-text-container">
+        <div class="address-contaiter">
+          <ul class="address-indent">
+            <li class="text-bold">HEADOFFICE</li>
+            <li class="foot-nav-list">
+              <i class="fas fa-map-marker-alt"></i> 101 Somewhere street,
+              Birmingham, The world ab1 cd3
+            </li>
+
+            <li class="foot-nav-list" id="hide-text">a</li>
+            <li class="foot-nav-list">
+              <i class="fas fa-phone fa-flip-horizontal"></i>
+              <a href="tel:0891505050">0891 50 50</a> 50
+            </li>
+          </ul>
+        </div>
+        <div class="nav-product-company-container">
+          <div class="foot-cont-1">
+            <ul>
+              <li class="text-bold">Navigation</li>
+              <li class="foot-nav-list"><a href="#">home</a></li>
+              <li class="foot-nav-list"><a href="#">news</a></li>
+              <li class="foot-nav-list"><a href="#">about</a></li>
+              <li class="foot-nav-list"><a href="#">contact</a></li>
+            </ul>
+          </div>
+          <div class="foot-cont-1">
+            <ul>
+              <li class="text-bold">Product</li>
+              <li class="foot-nav-list"><a href="#">product 1</a></li>
+              <li class="foot-nav-list"><a href="#">product 2</a></li>
+              <li class="foot-nav-list"><a href="#">product 3</a></li>
+              <li class="foot-nav-list"><a href="#">product 4</a></li>
+            </ul>
+          </div>
+          <div class="foot-cont-1">
+            <ul>
+              <li class="text-bold">Company</li>
+              <li class="foot-nav-list"><a href="#">legal</a></li>
+              <li class="foot-nav-list"><a href="#">login</a></li>
+              <li class="foot-nav-list" id="hide-text-2">a</li>
+              <li class="foot-nav-list" id="hide-text-3">a</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
@@ -244,5 +298,6 @@
       integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
       crossorigin="anonymous"
     ></script>
+    <script src="build/js/app.min.js"></script>
   </body>
 </html>
