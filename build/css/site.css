@@ -10125,7 +10125,7 @@ li ul li {
   background-color: #f6f6f6;
 }
 
-.container {
+.container-padding {
   padding: 120px 15px;
 }
 
@@ -10143,70 +10143,6 @@ li ul li {
   height: 480px;
 }
 
-.footer-text-container {
-  display: flex;
-  justify-content: space-between;
-  color: #cacaca;
-  font-weight: 400;
-  width: 1200px;
-  align-items: center;
-  margin: auto;
-  padding: 30px 25px;
-  border-top: 1px solid #808591;
-  border-bottom: 1px solid #808591;
-}
-
-#hide-text,
-#hide-text-2,
-#hide-text-3 {
-  color: #323545;
-}
-
-.footer-logo {
-  padding: 100px 0 30px 0;
-  background-color: #323545;
-  width: 1200px;
-  align-items: center;
-  margin: auto;
-}
-
-.text-bold {
-  display: block;
-  line-height: 1.6em;
-  color: #f4f4f4;
-}
-
-.foot-nav-list {
-  display: block;
-  line-height: 1.6em;
-  font-weight: 400;
-  color: #cacaca;
-}
-
-#world-text {
-  text-indent: 18px;
-}
-
-.nav-product-company-container {
-  width: 600px;
-  display: flex;
-  position: relative;
-  justify-content: space-between;
-}
-
-.foot-nav-list a {
-  color: #cacaca;
-}
-
-.address-contaiter {
-  width: 300px;
-}
-
-.address-indent {
-  list-style-position: inside;
-}
-
-.foot-cont-1 li {
-  padding: 0;
-  float: none;
+.container-footer-padding {
+  padding: 100px 15px 30px 15px;
 }
