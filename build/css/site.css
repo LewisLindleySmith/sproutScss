@@ -10136,6 +10136,11 @@ li ul li {
     font-size: 1.225rem;
   }
 }
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 1rem;
+  }
+}
 .bg-color {
   background-color: #f6f6f6;
 }
@@ -10163,18 +10168,27 @@ li ul li {
 }
 
 .container-border {
-  padding: 20px 0;
-  border-top: 1px solid #808591;
-  border-bottom: 1px solid #808591;
+  border-top: 1px solid #cacaca;
+  border-bottom: 1px solid #cacaca;
 }
 .container-border a {
   font-weight: 400;
+  color: #cacaca;
 }
-
-.hide-text {
+.container-border .hide-text {
   color: #323545;
 }
-
-.address-indent {
-  margin: 0 220px 0 15px;
+.container-border .address-indent {
+  margin: 0 0 0 15px;
+}
+.container-border .address-text {
+  padding-left: 16px;
+  color: #cacaca;
+  font-size: 16px;
+}
+.container-border .grey-color {
+  color: #cacaca;
+}
+.container-border .foot-cont-1 {
+  padding: 20px 0;
 }
