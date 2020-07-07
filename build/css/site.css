@@ -10121,6 +10121,21 @@ li ul li {
   color: #ffffff;
 }
 
+@media screen and (max-width: 1200px) {
+  h1 {
+    font-size: 3.125rem;
+  }
+}
+@media screen and (max-width: 992px) {
+  h1 {
+    font-size: 2.625rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.225rem;
+  }
+}
 .bg-color {
   background-color: #f6f6f6;
 }
@@ -10161,5 +10176,5 @@ li ul li {
 }
 
 .address-indent {
-  margin-left: 15px;
+  margin: 0 220px 0 15px;
 }
