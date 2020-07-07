@@ -267,8 +267,15 @@ li {
   padding: 20px 0;
   border-top: 1px solid#808591;
   border-bottom: 1px solid#808591;
+  a {
+    font-weight: 400;
+  }
 }
 
 .hide-text {
   color: #323545;
+}
+
+.address-indent {
+  margin-left: 15px;
 }
