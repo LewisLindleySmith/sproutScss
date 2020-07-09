@@ -1,0 +1,71 @@
+.my-div {
+  margin-bottom: $spacer * 2;
+}
+
+.nav-container {
+  background-color: $nav-bar-bg;
+}
+
+// a {
+//   color: $white;
+//   text-decoration: none;
+
+//   &:hover {
+//     color: $white;
+//     text-decoration: none;
+//   }
+// }
+
+// ul {
+//   padding: 0;
+//   margin-bottom: 0;
+// }
+
+.text-med {
+  font-size: $font-size-med;
+}
+span {
+  // font-size: 18px;
+  // color: $primary;
+}
+
+// give another name
+.blue-text {
+  color: $primary;
+
+  &:hover {
+    color: $blue;
+  }
+}
+
+//a.blue-text:hover {
+//color: $blue;
+//}
+
+// BUTTON
+
+.btn-outline-success {
+  color: $light-gray;
+  text-transform: uppercase;
+  font-size: 16px; // coming from body size var $font-size-base
+  font-weight: 700; // now using button var in variables file
+}
+
+// CONTAINER SECTION
+.bg-color {
+  //.bg-light-gray
+  background-color: $light-gray;
+}
+
+.container-padding {
+  padding: 120px 15px;
+}
+
+// use utikity align classes
+.right-align {
+  text-align: right;
+}
+// and this one
+#phoneIcon {
+  text-align: right;
+}

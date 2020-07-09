@@ -1,0 +1,147 @@
+.nav-section {
+  height: 100px;
+  align-items: center;
+  transition: ease 1s;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  z-index: 1;
+}
+
+.nav-logo {
+  position: absolute;
+  left: 15px;
+  padding: 0 15px;
+}
+
+.navbar-container {
+  justify-content: center;
+  padding: 0 0 0 100px;
+  width: 500px;
+
+  li {
+    padding: 0 15px;
+    float: left;
+
+    // a{
+    //   color: $white;
+
+    //   &:hover {
+    //     color: $white;
+    //   }
+    // }
+  }
+}
+
+.navbar-container,
+ul,
+li {
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  list-style-type: none;
+  // display: inline-block;
+  text-align: left;
+  text-decoration: none;
+}
+
+.login {
+  position: absolute;
+  right: 15px;
+  padding: 0 15px;
+}
+
+#stickyNav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 11;
+}
+
+#stickyNav.sticky {
+  background-color: #323545;
+  transition: 1s;
+}
+
+#stickyNav.sticky #dropDownMenu {
+  background-color: #323545;
+  transition: 1s;
+}
+
+// nav dropdown menu
+
+.dropdowns {
+  position: absolute;
+
+  li {
+    padding: 5px 0;
+  }
+}
+
+.sub-nav {
+  li {
+    color: #ffffff;
+    display: block;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+  }
+}
+
+li:hover > ul,
+li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+li {
+  list-style-type: none;
+  a {
+    color: #ffffff;
+  }
+  &:hover {
+    cursor: pointer;
+    text-decoration: none;
+  }
+  ul {
+    visibility: hidden;
+    opacity: 0;
+    min-width: 3rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    // left: 0;
+    display: none;
+  }
+  ul li {
+    clear: both;
+    width: 100%;
+  }
+}
+
+/* nav bar pink underline */
+
+.navbar-container {
+  a {
+    position: relative;
+    padding: 4px 0;
+  }
+  ul li a::after {
+    content: "";
+    height: 3px;
+    background-color: #da408d;
+    width: 0;
+    transition: width 0.2s, background-color 0.5s, visibility 0.2s;
+    margin: 0 auto;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    visibility: hidden;
+  }
+  ul li.active-link a::after,
+  ul li:hover a:hover::after {
+    width: 100%;
+    visibility: visible;
+  }
+}
