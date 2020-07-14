@@ -11,14 +11,11 @@ ul {
 }
 
 a:hover {
-  text-decoration: none;
+  text-decoration: $no-underline;
 }
 
 .text-med {
   font-size: $font-size-med;
-}
-span {
-  font-size: 18px;
 }
 
 .pink-text {
@@ -29,20 +26,27 @@ span {
   }
 }
 
-// BUTTON
+// BUTTOn
 
 .btn-outline-primary {
   color: $light-gray;
-  text-transform: uppercase;
+  text-transform: $uppercase;
   font-size: $font-size-base;
   font-weight: $font-weight-bold;
 }
 
 // CONTAINER SECTION
+
 .bg-light-gray {
   background-color: $light-gray;
 }
 
 .container-padding {
   padding: 120px 15px;
+
+  span {
+    font-size: $font-size-med;
+    text-transform: $uppercase;
+    font-weight: $font-weight-bold;
+  }
 }

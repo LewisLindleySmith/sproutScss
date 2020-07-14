@@ -1,5 +1,5 @@
 .form-elegant .font-small {
-  font-size: 0.8rem;
+  font-size: $font-size-sm;
 }
 
 .form-elegant .z-depth-1a {
@@ -20,10 +20,10 @@
 }
 
 .modal-dialog .form-elegant .btn .fab {
-  color: #da408d !important;
+  color: $primary !important;
 }
 
 .form-elegant .modal-body,
 .form-elegant .modal-footer {
-  font-weight: 400;
+  font-weight: $font-weight-normal;
 }

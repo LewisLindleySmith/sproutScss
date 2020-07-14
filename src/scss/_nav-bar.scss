@@ -14,6 +14,10 @@
   }
 }
 
+.hamberger-nav {
+  background-color: red;
+}
+
 .navbar-container {
   justify-content: center;
   padding: 0 0 0 100px;
@@ -28,9 +32,9 @@
   li {
     font-family: $font-family-base;
     font-weight: $font-weight-bold;
-    text-transform: uppercase;
-    list-style-type: none;
-    text-decoration: none;
+    text-transform: $uppercase;
+    list-style-type: $no-underline;
+    text-decoration: $no-underline;
   }
 }
 
