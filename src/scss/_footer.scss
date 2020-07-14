@@ -2,26 +2,30 @@
 
 .footer-container {
   background-color: $nav-foot-bg;
-  color: #ffffff; // ** this could be made into a variable
+  color: $white;
   padding-bottom: 90px;
 }
 
 .container-footer-padding {
-  padding: 100px 15px 30px 15px; // ** you can shot hand this i.e. 100px 15px 30px is the same as writing 100px 15px 30px 15px
+  padding: 100px 15px 30px;
 }
 
 .container-border {
   border-top: $border-width solid $secondary;
   border-bottom: $border-width solid $secondary;
 
+  ul {
+    padding: 0px;
+  }
+
   li {
-    text-transform: $uppercase; // ** uppercase doesnt need to be a var as its never going to be anything else, writing text-transform: uppercase; is fine
+    text-transform: uppercase;
   }
 
   a {
     font-weight: $font-weight-normal;
     color: $secondary;
-    text-transform: $uppercase; // ** uppercase doesnt need to be a var as its never going to be anything else, writing text-transform: uppercase; is fine
+    text-transform: uppercase;
   }
 
   .hide-text {
@@ -35,14 +39,13 @@
   .address-text {
     padding-left: 16px;
     color: $secondary;
-    font-size: $font-size-base; // ** not required as the font-szie-base is inherieted from body by default.
-  }
-
-  .grey-color {
-    color: $secondary; // ** this could be moved into _base.scss and given a more bootstrap friendly name checkout -https://getbootstrap.com/docs/4.5/utilities/colors/
   }
 
   .foot-cont-1 {
     padding: 20px 0;
+  }
+
+  .foot-cont-2 {
+    padding: 20px 0 0 15px;
   }
 }

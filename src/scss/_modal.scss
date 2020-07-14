@@ -3,13 +3,14 @@
 }
 
 .form-elegant .z-depth-1a {
-  box-shadow: 0 2px 5px 0 rgba(55, 161, 255, 0.26), 0 4px 12px 0 rgba(121, 155, 254, 0.25);
+  box-shadow: 0 2px 5px 0 rgba(55, 161, 255, 0.26),
+    0 4px 12px 0 rgba(121, 155, 254, 0.25);
 }
 
 .form-elegant .z-depth-1-half,
 .form-elegant .btn:hover {
-  -webkit-box-shadow: 0 5px 11px 0 rgba(lighten($blue, 10%), 0.28), 0 4px 15px 0 rgba($blue, 0.15); // ** you dont need to include -webkit specfic styles as handeled by webpack
-  box-shadow: 0 5px 11px 0 rgba(lighten($blue, 10%), 0.28), 0 4px 15px 0 rgba($blue, 0.15);
+  box-shadow: 0 5px 11px 0 rgba(lighten($blue, 10%), 0.28),
+    0 4px 15px 0 rgba($blue, 0.15);
 }
 
 .form-elegant .modal-header {
@@ -17,10 +18,5 @@
 }
 
 .modal-dialog .form-elegant .btn .fab {
-  color: $primary !important; // ** check if you need to use !important here as you can get in a !impoirtant fight isf you have too many so use spareingly
-}
-
-.form-elegant .modal-body,
-.form-elegant .modal-footer {
-  font-weight: $font-weight-normal; // ** check if this is needed as I suspsnect the font weight is being inheirted from body (check you browser inspect)
+  color: $primary;
 }

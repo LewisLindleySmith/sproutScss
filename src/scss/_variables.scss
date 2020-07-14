@@ -1,6 +1,7 @@
 $body-bg: white;
 $primary: #da408d;
 $secondary: #cacaca;
+$white: #ffffff;
 $nav-foot-bg: #323545;
 $nav-bar-bg: darkgray;
 $blue: #0056b3;
@@ -10,8 +11,8 @@ $font-family-base: "PT Sans", sans-serif;
 $headings-font-family: "Montserrat", sans-serif;
 $headings-font-weight: 700;
 
-$link-color: #ffffff;
-$link-hover-color: #ffffff;
+$link-color: $white;
+$link-hover-color: $white;
 
 $font-size-base: 1rem;
 $font-size-sm: $font-size-base * 0.875 !default;
@@ -32,6 +33,4 @@ $a-font-size: $font-size-base;
 
 $text-align-right: right;
 
-$uppercase: uppercase;
-
-$no-underline: none;
+$banner-width: 800px;
