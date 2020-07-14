@@ -7,8 +7,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
   line-height: 1.5;
-  width: 800px;
-  color: #ffffff;
+  width: 800px; // ** this could be made into a variable
+  color: #ffffff; // ** this could be made into a variable
 
   @media screen and (max-width: 1200px) {
     h1 {

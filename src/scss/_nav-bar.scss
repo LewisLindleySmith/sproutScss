@@ -25,16 +25,16 @@
 
   li {
     padding: 0 15px;
-    float: left;
+    float: left; // ** ewwwww floats are gross, see if you can achive what you need to do with flex instead
   }
 
   ul,
   li {
-    font-family: $font-family-base;
+    font-family: $font-family-base; // ** check if this is needed or is this already been inheirted?
     font-weight: $font-weight-bold;
-    text-transform: $uppercase;
-    list-style-type: $no-underline;
-    text-decoration: $no-underline;
+    text-transform: $uppercase; // ** uppercase doesnt need to be a var as its never going to be anything else, writing text-transform: uppercase; is fine
+    list-style-type: $no-underline; // ** no-underline doesnt need to be a var as its never going to be anything else
+    text-decoration: $no-underline; // ** no-underline doesnt need to be a var as its never going to be anything else
   }
 }
 
@@ -113,7 +113,6 @@ li {
 }
 
 /* nav bar pink underline */
-
 .navbar-container {
   a {
     position: relative;

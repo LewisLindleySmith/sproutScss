@@ -6,6 +6,8 @@
   background-color: $nav-bar-bg;
 }
 
+// ** this is too global. Best thing to do is go through your styles and find which <ul> you want to remove the padding from
+// ** and remove the padding from them. This is fine now but when you add a content page you may have issues as its too global
 ul {
   padding: 0;
 }
@@ -29,8 +31,9 @@ a:hover {
 // BUTTOn
 
 .btn-outline-primary {
+  // ** Look at this button in your browser inspect, 2 of these styles arent needed as there already been applied on the .btn class
   color: $light-gray;
-  text-transform: $uppercase;
+  text-transform: $uppercase; // ** uppercase doesnt need to be a var as its never going to be anything else, writing text-transform: uppercase; is fine
   font-size: $font-size-base;
   font-weight: $font-weight-bold;
 }
@@ -46,7 +49,7 @@ a:hover {
 
   span {
     font-size: $font-size-med;
-    text-transform: $uppercase;
+    text-transform: $uppercase; // ** uppercase doesnt need to be a var as its never going to be anything else, writing text-transform: uppercase; is fine
     font-weight: $font-weight-bold;
   }
 }
