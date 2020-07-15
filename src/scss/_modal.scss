@@ -1,22 +1,28 @@
-.form-elegant .font-small {
-  font-size: $font-size-sm;
-}
+.modal-dialog {
+  .form-elegant {
+    .btn {
+      .fab {
+        color: $primary;
+      }
+    }
 
-.form-elegant .z-depth-1a {
-  box-shadow: 0 2px 5px 0 rgba(55, 161, 255, 0.26),
-    0 4px 12px 0 rgba(121, 155, 254, 0.25);
-}
+    .modal-header {
+      border-bottom: none;
+    }
 
-.form-elegant .z-depth-1-half,
-.form-elegant .btn:hover {
-  box-shadow: 0 5px 11px 0 rgba(lighten($blue, 10%), 0.28),
-    0 4px 15px 0 rgba($blue, 0.15);
-}
+    .z-depth-1-half,
+    .form-elegant .btn:hover {
+      box-shadow: 0 5px 11px 0 rgba(lighten($blue, 10%), 0.28),
+        0 4px 15px 0 rgba($blue, 0.15);
+    }
 
-.form-elegant .modal-header {
-  border-bottom: none;
-}
+    .z-depth-1a {
+      box-shadow: 0 2px 5px 0 rgba(55, 161, 255, 0.26),
+        0 4px 12px 0 rgba(121, 155, 254, 0.25);
+    }
 
-.modal-dialog .form-elegant .btn .fab {
-  color: $primary;
+    .font-small {
+      font-size: $font-size-sm;
+    }
+  }
 }

@@ -62,7 +62,7 @@ body {
   line-height: 1.5;
   color: #212529;
   text-align: left;
-  background-color: white;
+  background-color: #ffffff;
 }
 
 [tabindex="-1"]:focus:not(:focus-visible) {
@@ -474,7 +474,7 @@ mark,
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: white;
+  background-color: #ffffff;
   border: 1px solid #dee2e6;
   border-radius: 0.25rem;
   max-width: 100%;
@@ -3727,13 +3727,13 @@ input[type=button].btn-block {
   outline: none;
 }
 .custom-range:focus::-webkit-slider-thumb {
-  box-shadow: 0 0 0 1px white, 0 0 0 0.2rem rgba(218, 64, 141, 0.25);
+  box-shadow: 0 0 0 1px #ffffff, 0 0 0 0.2rem rgba(218, 64, 141, 0.25);
 }
 .custom-range:focus::-moz-range-thumb {
-  box-shadow: 0 0 0 1px white, 0 0 0 0.2rem rgba(218, 64, 141, 0.25);
+  box-shadow: 0 0 0 1px #ffffff, 0 0 0 0.2rem rgba(218, 64, 141, 0.25);
 }
 .custom-range:focus::-ms-thumb {
-  box-shadow: 0 0 0 1px white, 0 0 0 0.2rem rgba(218, 64, 141, 0.25);
+  box-shadow: 0 0 0 1px #ffffff, 0 0 0 0.2rem rgba(218, 64, 141, 0.25);
 }
 .custom-range::-moz-focus-outer {
   border: 0;
@@ -3901,8 +3901,8 @@ input[type=button].btn-block {
 .nav-tabs .nav-link.active,
 .nav-tabs .nav-item.show .nav-link {
   color: #495057;
-  background-color: white;
-  border-color: #dee2e6 #dee2e6 white;
+  background-color: #ffffff;
+  border-color: #dee2e6 #dee2e6 #ffffff;
 }
 .nav-tabs .dropdown-menu {
   margin-top: -1px;
@@ -9959,25 +9959,21 @@ li {
   font-weight: 700;
 }
 
-.form-elegant .font-small {
-  font-size: 0.875rem;
-}
-
-.form-elegant .z-depth-1a {
-  box-shadow: 0 2px 5px 0 rgba(55, 161, 255, 0.26), 0 4px 12px 0 rgba(121, 155, 254, 0.25);
-}
-
-.form-elegant .z-depth-1-half,
-.form-elegant .btn:hover {
-  box-shadow: 0 5px 11px 0 rgba(0, 111, 230, 0.28), 0 4px 15px 0 rgba(0, 86, 179, 0.15);
-}
-
-.form-elegant .modal-header {
-  border-bottom: none;
-}
-
 .modal-dialog .form-elegant .btn .fab {
   color: #da408d;
+}
+.modal-dialog .form-elegant .modal-header {
+  border-bottom: none;
+}
+.modal-dialog .form-elegant .z-depth-1-half,
+.modal-dialog .form-elegant .form-elegant .btn:hover {
+  box-shadow: 0 5px 11px 0 rgba(0, 111, 230, 0.28), 0 4px 15px 0 rgba(0, 86, 179, 0.15);
+}
+.modal-dialog .form-elegant .z-depth-1a {
+  box-shadow: 0 2px 5px 0 rgba(55, 161, 255, 0.26), 0 4px 12px 0 rgba(121, 155, 254, 0.25);
+}
+.modal-dialog .form-elegant .font-small {
+  font-size: 0.875rem;
 }
 
 .nav-container .nav-section {
