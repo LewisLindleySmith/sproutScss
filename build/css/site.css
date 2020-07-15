@@ -9974,17 +9974,22 @@ a:hover {
 }
 
 .nav-section {
-  height: 100px;
-  align-items: center;
-  transition: ease 1s;
   display: flex;
-  position: relative;
   justify-content: center;
+  align-items: center;
+  height: 100px;
   z-index: 1;
+  transition: ease 1s;
+  position: relative;
 }
 .nav-section .nav-logo {
   position: absolute;
   left: 15px;
+  padding: 0 15px;
+}
+.nav-section .login {
+  position: absolute;
+  right: 15px;
   padding: 0 15px;
 }
 
@@ -9997,8 +10002,8 @@ a:hover {
   padding: 0;
 }
 .navbar-container li {
+  display: inline-flex;
   padding: 0 15px;
-  float: left;
 }
 .navbar-container ul,
 .navbar-container li {
@@ -10007,11 +10012,11 @@ a:hover {
   list-style-type: none;
   text-decoration: none;
 }
-
-.login {
+.navbar-container ul li ul {
   position: absolute;
-  right: 15px;
-  padding: 0 15px;
+  top: 50px;
+  width: 64px;
+  padding-left: 10px;
 }
 
 #stickyNav {
@@ -10043,6 +10048,7 @@ a:hover {
   position: relative;
   text-decoration: none;
   transition-duration: 0.5s;
+  width: 70px;
 }
 
 li:hover > ul,
