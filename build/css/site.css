@@ -9973,20 +9973,6 @@ a:hover {
   color: #da408d;
 }
 
-.nav-container #stickyNav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 11;
-}
-.nav-container #stickyNav.sticky {
-  background-color: #323545;
-  transition: 1s;
-}
-.nav-container #stickyNav.sticky #dropDownMenu {
-  background-color: #323545;
-  transition: 1s;
-}
 .nav-container .nav-section {
   display: flex;
   justify-content: center;
@@ -10005,6 +9991,20 @@ a:hover {
   position: absolute;
   right: 15px;
   padding: 0 15px;
+}
+.nav-container #stickyNav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 11;
+}
+.nav-container #stickyNav.sticky {
+  background-color: #323545;
+  transition: 1s;
+}
+.nav-container #stickyNav.sticky #dropDownMenu {
+  background-color: #323545;
+  transition: 1s;
 }
 .nav-container .navbar-container {
   justify-content: center;
@@ -10032,24 +10032,23 @@ a:hover {
 .nav-container .navbar-container li {
   display: inline-flex;
 }
-li:hover > ul,
-li ul:hover {
+.nav-container .navbar-container li:hover > ul,
+.nav-container .navbar-container li ul:hover {
   visibility: visible;
   opacity: 1;
   display: block;
 }
-
-li {
+.nav-container .navbar-container li {
   list-style-type: none;
 }
-li a {
+.nav-container .navbar-container li a {
   color: #ffffff;
 }
-li:hover {
+.nav-container .navbar-container li:hover {
   cursor: pointer;
   text-decoration: none;
 }
-li ul {
+.nav-container .navbar-container li ul {
   visibility: hidden;
   opacity: 0;
   min-width: 3rem;
@@ -10057,17 +10056,15 @@ li ul {
   transition: all 0.5s ease;
   display: none;
 }
-li ul li {
+.nav-container .navbar-container li ul li {
   clear: both;
   width: 100%;
 }
-
-/* nav bar pink underline */
-.navbar-container a {
+.nav-container .navbar-container a {
   position: relative;
   padding: 4px 0;
 }
-.navbar-container ul li a::after {
+.nav-container .navbar-container ul li a::after {
   content: "";
   height: 3px;
   background-color: #da408d;
@@ -10080,8 +10077,8 @@ li ul li {
   right: 0;
   visibility: hidden;
 }
-.navbar-container ul li.active-link a::after,
-.navbar-container ul li:hover a:hover::after {
+.nav-container .navbar-container ul li.active-link a::after,
+.nav-container .navbar-container ul li:hover a:hover::after {
   width: 100%;
   visibility: visible;
 }

@@ -1,20 +1,5 @@
 .nav-container {
-  #stickyNav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 11;
-  }
-
-  #stickyNav.sticky {
-    background-color: $nav-foot-bg;
-    transition: 1s;
-
-    #dropDownMenu {
-      background-color: $nav-foot-bg;
-      transition: 1s;
-    }
-  }
+  // this is the full header section
   .nav-section {
     display: flex;
     justify-content: center;
@@ -37,6 +22,24 @@
     }
   }
 
+  #stickyNav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 11;
+  }
+
+  #stickyNav.sticky {
+    background-color: $nav-foot-bg;
+    transition: 1s;
+
+    #dropDownMenu {
+      background-color: $nav-foot-bg;
+      transition: 1s;
+    }
+  }
+
+  // this is the navigation menu section
   .navbar-container {
     justify-content: center;
     padding: 0 0 0 100px;
@@ -68,68 +71,64 @@
       display: inline-flex;
     }
 
-    a {
+    // nav dropdown menu *** how best to nest this section? ***
+    li:hover > ul,
+    li ul:hover {
+      visibility: visible;
+      opacity: 1;
+      display: block;
     }
-  }
-}
-
-// nav dropdown menu, *** how best to nest this section? ***
-
-li:hover > ul,
-li ul:hover {
-  visibility: visible;
-  opacity: 1;
-  display: block;
-}
-
-li {
-  list-style-type: none;
-  a {
-    color: $link-color;
-  }
-  &:hover {
-    cursor: pointer;
-    text-decoration: none;
-  }
-  ul {
-    visibility: hidden;
-    opacity: 0;
-    min-width: 3rem;
-    position: absolute;
-    transition: all 0.5s ease;
-    display: none;
 
     li {
-      clear: both;
+      list-style-type: none;
+      a {
+        color: $link-color;
+      }
+      &:hover {
+        cursor: pointer;
+        text-decoration: none;
+      }
+      ul {
+        visibility: hidden;
+        opacity: 0;
+        min-width: 3rem;
+        position: absolute;
+        transition: all 0.5s ease;
+        display: none;
+
+        li {
+          clear: both;
+          width: 100%;
+        }
+      }
+    }
+
+    // nav bar pink underline *** how best to nest this section? ***
+    a {
+      position: relative;
+      padding: 4px 0;
+    }
+
+    ul li a::after {
+      content: "";
+      height: 3px;
+      background-color: $primary;
+      width: 0;
+      transition: width 0.2s, background-color 0.5s, visibility 0.2s;
+      margin: 0 auto;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      visibility: hidden;
+    }
+
+    ul li.active-link a::after,
+    ul li:hover a:hover::after {
       width: 100%;
+      visibility: visible;
     }
   }
-}
 
-/* nav bar pink underline */
-.navbar-container {
-  a {
-    position: relative;
-    padding: 4px 0;
-  }
-
-  ul li a::after {
-    content: "";
-    height: 3px;
-    background-color: $primary;
-    width: 0;
-    transition: width 0.2s, background-color 0.5s, visibility 0.2s;
-    margin: 0 auto;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    visibility: hidden;
-  }
-
-  ul li.active-link a::after,
-  ul li:hover a:hover::after {
-    width: 100%;
-    visibility: visible;
-  }
+  // this is the login button section
 }
