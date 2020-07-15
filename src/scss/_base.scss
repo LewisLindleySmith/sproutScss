@@ -22,6 +22,10 @@ a:hover {
   }
 }
 
+li {
+  list-style: none;
+}
+
 // BUTTON
 
 .btn-outline-primary {
@@ -37,6 +41,10 @@ a:hover {
 
 .container-padding {
   padding: 120px 15px;
+
+  ul {
+    padding: 0;
+  }
 
   span {
     font-size: $font-size-med;
