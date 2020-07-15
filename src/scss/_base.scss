@@ -53,6 +53,13 @@ li {
   }
 }
 
-// .banner-section {
-//   margin-top: 100px;
-// }
+.banner-text {
+  text-align: center;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.5;
+  width: $banner-width;
+  color: $white;
+}
