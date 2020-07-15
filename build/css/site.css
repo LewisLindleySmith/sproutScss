@@ -9973,7 +9973,21 @@ a:hover {
   color: #da408d;
 }
 
-.nav-section {
+.nav-container #stickyNav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 11;
+}
+.nav-container #stickyNav.sticky {
+  background-color: #323545;
+  transition: 1s;
+}
+.nav-container #stickyNav.sticky #dropDownMenu {
+  background-color: #323545;
+  transition: 1s;
+}
+.nav-container .nav-section {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9982,75 +9996,42 @@ a:hover {
   transition: ease 1s;
   position: relative;
 }
-.nav-section .nav-logo {
+.nav-container .nav-section .nav-logo {
   position: absolute;
   left: 15px;
   padding: 0 15px;
 }
-.nav-section .login {
+.nav-container .nav-section .login {
   position: absolute;
   right: 15px;
   padding: 0 15px;
 }
-
-.navbar-container {
+.nav-container .navbar-container {
   justify-content: center;
   padding: 0 0 0 100px;
   width: 500px;
 }
-.navbar-container ul {
+.nav-container .navbar-container ul {
   padding: 0;
 }
-.navbar-container li {
-  display: inline-flex;
-  padding: 0 15px;
-}
-.navbar-container ul,
-.navbar-container li {
+.nav-container .navbar-container ul li {
   font-weight: 700;
   text-transform: uppercase;
   list-style-type: none;
   text-decoration: none;
+  padding: 0 15px;
 }
-.navbar-container ul li ul {
+.nav-container .navbar-container ul li ul {
   position: absolute;
   top: 50px;
-  width: 64px;
-  padding-left: 10px;
+  width: 60px;
 }
-
-#stickyNav {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 11;
+.nav-container .navbar-container ul li ul li {
+  padding: 0;
 }
-
-#stickyNav.sticky {
-  background-color: #323545;
-  transition: 1s;
+.nav-container .navbar-container li {
+  display: inline-flex;
 }
-#stickyNav.sticky #dropDownMenu {
-  background-color: #323545;
-  transition: 1s;
-}
-
-.dropdowns {
-  position: absolute;
-}
-.dropdowns li {
-  padding: 5px 0;
-}
-
-.sub-nav li {
-  color: #ffffff;
-  display: block;
-  position: relative;
-  text-decoration: none;
-  transition-duration: 0.5s;
-  width: 70px;
-}
-
 li:hover > ul,
 li ul:hover {
   visibility: visible;
