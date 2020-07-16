@@ -11,6 +11,14 @@
     width: $banner-width;
     color: $white;
 
+    // ** https://getbootstrap.com/docs/4.1/layout/overview/
+    @include media-breakpoint-up(lg) {
+    }
+
+    @include media-breakpoint-down(lg) {
+      // trigger code
+    }
+
     @media screen and (max-width: 1200px) {
       h1 {
         font-size: 3.125rem;
