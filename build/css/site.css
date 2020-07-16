@@ -10132,6 +10132,9 @@ li {
     font-size: 3.125rem;
   }
 }
+.carousel .map {
+  filter: brightness(30%);
+}
 
 .footer-container {
   background-color: #323545;
