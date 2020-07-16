@@ -368,11 +368,11 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-size: 1.125rem;
+  font-size: 1.75rem;
 }
 
 h4, .h4 {
-  font-size: 1rem;
+  font-size: 1.5rem;
 }
 
 h5, .h5 {
@@ -9919,6 +9919,10 @@ h3 {
   background-color: #323545;
 }
 
+a {
+  color: #da408d;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -10042,6 +10046,10 @@ li {
 }
 .nav-container .navbar-container ul li ul li {
   padding: 0;
+}
+.nav-container .navbar-container ul li ul li a {
+  color: #ffffff;
+  text-decoration: none;
 }
 .nav-container .navbar-container li {
   display: inline-flex;

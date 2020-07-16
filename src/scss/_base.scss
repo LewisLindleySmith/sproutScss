@@ -6,6 +6,10 @@
   background-color: $nav-bar-bg;
 }
 
+a {
+  color: $primary;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -53,6 +57,7 @@ li {
   }
 }
 
+// news page updated scss
 .banner-text {
   // ** Im guessing this is left over as id guess it should be in your carousel.scss
   text-align: center;
