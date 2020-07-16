@@ -3,24 +3,18 @@
 .footer-container {
   background-color: $nav-foot-bg;
   color: $white;
-  padding-bottom: 90px;
+  padding: $spacer * 6 0;
 
-  .container-footer-padding {
-    // ** to go through on the phone
-    padding: 100px 15px 30px;
+  .footer-logo {
+    margin-bottom: $spacer * 2;
   }
 
   .container-border {
     border-top: $border-width solid $secondary;
     border-bottom: $border-width solid $secondary;
 
-    .foot-cont-1 {
-      // ** to go through on the phone
-      padding: 20px 0;
-    }
-
-    .address-indent {
-      margin: 0 0 0 15px;
+    .footer-container-inner {
+      margin: 20px 0 5px;
     }
 
     ul {
@@ -35,22 +29,15 @@
           text-transform: uppercase;
 
           .address-text {
-            padding-left: 16px;
             color: $secondary;
+            padding-left: 16px;
           }
         }
       }
 
-      // ** ive put a comment in you index.htmk file regarding this (swap out for utiltity class)
-      // ** https://getbootstrap.com/docs/4.1/utilities/spacing/
       .hide-text {
         color: $nav-foot-bg;
       }
-    }
-
-    .foot-cont-2 {
-      // ** to go through on the phone
-      padding: 20px 0 0 15px;
     }
   }
 }

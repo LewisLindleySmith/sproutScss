@@ -10136,20 +10136,17 @@ li {
 .footer-container {
   background-color: #323545;
   color: #ffffff;
-  padding-bottom: 90px;
+  padding: 6rem 0;
 }
-.footer-container .container-footer-padding {
-  padding: 100px 15px 30px;
+.footer-container .footer-logo {
+  margin-bottom: 2rem;
 }
 .footer-container .container-border {
   border-top: 1px solid #cacaca;
   border-bottom: 1px solid #cacaca;
 }
-.footer-container .container-border .foot-cont-1 {
-  padding: 20px 0;
-}
-.footer-container .container-border .address-indent {
-  margin: 0 0 0 15px;
+.footer-container .container-border .footer-container-inner {
+  margin: 20px 0 5px;
 }
 .footer-container .container-border ul {
   padding: 0px;
@@ -10163,12 +10160,9 @@ li {
   text-transform: uppercase;
 }
 .footer-container .container-border ul li a .address-text {
-  padding-left: 16px;
   color: #cacaca;
+  padding-left: 16px;
 }
 .footer-container .container-border ul .hide-text {
   color: #323545;
-}
-.footer-container .container-border .foot-cont-2 {
-  padding: 20px 0 0 15px;
 }
