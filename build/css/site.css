@@ -9963,17 +9963,6 @@ li {
   font-weight: 700;
 }
 
-.banner-text {
-  text-align: center;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  line-height: 1.5;
-  width: 800px;
-  color: #ffffff;
-}
-
 .modal-dialog .form-elegant .btn .fab {
   color: #da408d;
 }
@@ -10105,6 +10094,9 @@ li {
   visibility: visible;
 }
 
+.carousel {
+  max-height: 689px;
+}
 .carousel .banner-text {
   text-align: center;
   position: absolute;
@@ -10115,24 +10107,29 @@ li {
   width: 800px;
   color: #ffffff;
 }
-@media screen and (max-width: 1200px) {
+@media (min-width: 100px) {
   .carousel .banner-text h1 {
-    font-size: 3.125rem;
+    font-size: 1rem;
   }
 }
-@media screen and (max-width: 992px) {
+@media (min-width: 576px) {
   .carousel .banner-text h1 {
-    font-size: 2.625rem;
+    font-size: 1rem;
   }
 }
-@media screen and (max-width: 768px) {
+@media (min-width: 768px) {
   .carousel .banner-text h1 {
     font-size: 1.225rem;
   }
 }
-@media screen and (max-width: 600px) {
+@media (min-width: 992px) {
   .carousel .banner-text h1 {
-    font-size: 1rem;
+    font-size: 2.625rem;
+  }
+}
+@media (min-width: 1200px) {
+  .carousel .banner-text h1 {
+    font-size: 3.125rem;
   }
 }
 

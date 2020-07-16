@@ -1,6 +1,8 @@
 // CAROUSEL
 
 .carousel {
+  max-height: 689px;
+
   .banner-text {
     text-align: center;
     position: absolute;
@@ -11,32 +13,29 @@
     width: $banner-width;
     color: $white;
 
-    // ** https://getbootstrap.com/docs/4.1/layout/overview/
+    @media (min-width: 100px) {
+      h1 {
+        font-size: $font-size-base;
+      }
+    }
+    @include media-breakpoint-up(sm) {
+      h1 {
+        font-size: $font-size-base;
+      }
+    }
+    @include media-breakpoint-up(md) {
+      h1 {
+        font-size: $carousel-min-768px;
+      }
+    }
     @include media-breakpoint-up(lg) {
-    }
-
-    @include media-breakpoint-down(lg) {
-      // trigger code
-    }
-
-    @media screen and (max-width: 1200px) {
       h1 {
-        font-size: 3.125rem;
+        font-size: $carousel-min-992px;
       }
     }
-    @media screen and (max-width: 992px) {
+    @include media-breakpoint-up(xl) {
       h1 {
-        font-size: 2.625rem;
-      }
-    }
-    @media screen and (max-width: 768px) {
-      h1 {
-        font-size: 1.225rem;
-      }
-    }
-    @media screen and (max-width: 600px) {
-      h1 {
-        font-size: 1rem;
+        font-size: $carousel-min-1200px;
       }
     }
   }
