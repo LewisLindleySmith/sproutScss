@@ -10169,3 +10169,8 @@ li {
 .footer-container .container-border ul .hide-text {
   color: #323545;
 }
+
+.form-container {
+  margin: 6rem 0;
+  background-color: #f6f6f6;
+}
