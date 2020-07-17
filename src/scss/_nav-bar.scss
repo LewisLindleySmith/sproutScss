@@ -138,3 +138,13 @@
 
   // this is the login button section
 }
+
+// about nav bar
+
+.nav-about {
+  background-color: $nav-bar-bg;
+
+  .dropdown-about {
+    background-color: $nav-bar-bg;
+  }
+}

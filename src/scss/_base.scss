@@ -56,3 +56,8 @@ li {
     font-weight: $font-weight-bold;
   }
 }
+
+// ABOUT CONTAINER
+.about-container {
+  margin: $spacer * 12 0 $spacer * 12; // why no margin bottom?
+}
